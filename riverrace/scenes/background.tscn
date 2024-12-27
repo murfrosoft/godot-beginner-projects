@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://da523af15jldy"]
+
+[ext_resource type="Script" path="res://parallax_background.gd" id="1_vg5ec"]
+[ext_resource type="Texture2D" uid="uid://cetmabdhf1cl" path="res://images/river_bg.png" id="2_c7jw1"]
+
+[node name="Background" type="ParallaxBackground"]
+script = ExtResource("1_vg5ec")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0, 1)
+motion_mirroring = Vector2(0, 800)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_c7jw1")
+centered = false

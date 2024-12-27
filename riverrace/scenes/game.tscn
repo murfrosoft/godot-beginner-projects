@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://dpst7st52re5b"]
+[gd_scene load_steps=5 format=3 uid="uid://dpst7st52re5b"]
+
+[ext_resource type="PackedScene" uid="uid://da523af15jldy" path="res://scenes/background.tscn" id="1_faipg"]
+[ext_resource type="PackedScene" uid="uid://2iirt5xnqdbw" path="res://scenes/player.tscn" id="2_njt63"]
+[ext_resource type="PackedScene" uid="uid://c23h88yji4uhd" path="res://scenes/green_gator.tscn" id="3_pjryt"]
+[ext_resource type="PackedScene" uid="uid://d4u1nduqj2wy" path="res://scenes/red_gator.tscn" id="4_50hcf"]
 
 [node name="Game" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_faipg")]
+
+[node name="Player" parent="." instance=ExtResource("2_njt63")]
+position = Vector2(422, 111)
+
+[node name="GreenGator" parent="." instance=ExtResource("3_pjryt")]
+position = Vector2(408, 665)
+
+[node name="RedGator" parent="." instance=ExtResource("4_50hcf")]
+position = Vector2(522, 697)
