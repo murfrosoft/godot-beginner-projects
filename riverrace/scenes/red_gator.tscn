@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4u1nduqj2wy"]
+
+[ext_resource type="Texture2D" uid="uid://cpv32xt8l88ms" path="res://images/gator.png" id="1_oemjj"]
+[ext_resource type="Script" path="res://scripts/red_gator.gd" id="2_55auc"]
+
+[node name="RedGator" type="Sprite2D"]
+modulate = Color(1, 0.164706, 0, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oemjj")
+script = ExtResource("2_55auc")
